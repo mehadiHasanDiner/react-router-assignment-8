@@ -9,10 +9,9 @@ const LeagueDetails = () => {
 
   const {leagues,loading,fetchLeagues} = useGlobalContext();
    const{id} = useParams()
-
    useEffect(()=>{
     fetchLeagues(`${urls}${id}`)
-  },[id])
+  },[id, fetchLeagues])
  if(loading){
   return(
    <main>

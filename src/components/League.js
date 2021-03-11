@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useGlobalContext } from '../context'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const League = ({id,img,name}) => {
- const{handleClick} = useGlobalContext()
+//  const{handleClick} = useGlobalContext()
 
  return (
   <div className='league'>

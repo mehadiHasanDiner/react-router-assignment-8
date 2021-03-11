@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from 'react'
+import React, { useEffect} from 'react'
 import { useGlobalContext } from '../context';
 import { useParams} from 'react-router-dom'
 import Banner from '../components/Banner';

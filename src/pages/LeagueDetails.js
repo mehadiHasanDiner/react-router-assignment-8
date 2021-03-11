@@ -12,7 +12,7 @@ const LeagueDetails = () => {
    useEffect(()=>{
     fetchLeagues(`${urls}${id}`)
     fetch(fetchLeagues)
-  },[id])
+  },[id, fetchLeagues])
  if(loading){
   return(
    <main>

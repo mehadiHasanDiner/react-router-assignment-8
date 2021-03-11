@@ -11,7 +11,8 @@ const LeagueDetails = () => {
    const{id} = useParams()
    useEffect(()=>{
     fetchLeagues(`${urls}${id}`)
-  },[id, fetchLeagues])
+    fetch(fetchLeagues)
+  },[id])
  if(loading){
   return(
    <main>

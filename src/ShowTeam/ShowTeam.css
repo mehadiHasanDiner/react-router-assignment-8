@@ -16,37 +16,17 @@
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432); 
 }
-.card{
-    margin-bottom: 30px;
-    text-align: center;
-}
-.card-title {
-    font-weight: 700;
-}
-.main-btn{
-    background: #c31432;
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);
-    background: linear-gradient(to right, #240b36, #c31432);
-    border: none;
-}
-.main-btn a{
-    color: #fff;
-}
-img.card-img-top {
-    width: 50%;
-    margin: 0 auto;
-}
-.main-btn a span{
-    padding-left: 10px;
+.btn a{
+    color: white;
+
 }
 .team-summary{
-    background: #c31432;
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);
-    background: linear-gradient(to right, #240b36, #c31432);
+    background-color: #5719bb;
     padding: 30px;
     border-radius: 20px;
     margin-top: 50px;
     color: #fff;
+    box-shadow: 3px 5px 10px #731bbb;
 }
 .league-name{
     font-weight: 700;

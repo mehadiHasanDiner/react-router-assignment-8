@@ -8,7 +8,9 @@ const Header = () => {
     return (
         <div className= "header-style">
             <div className ="header-name">
-            <div>World Famous Football League</div>
+            <div>Wikipedia</div>
+            <div>Of</div>
+            <div>World Famous Football Clubs </div>
             </div>
         </div>
     );

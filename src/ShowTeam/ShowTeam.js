@@ -42,6 +42,9 @@ const ShowTeam = () => {
         }
         return image;
     }
+    const facebook = "https://"+showTeam.strFacebook;
+    const twitter = "https://"+showTeam.strTwitter;
+    const youTube = "https://"+showTeam.strYoutube;
     
     return (
         <div>
@@ -52,7 +55,7 @@ const ShowTeam = () => {
                 <div className="team-summary">
                     <Row>
                         <Col xs ={12} md ={6}>
-                        <h3 >{showTeam.strLeague}</h3>
+                        <h3>{showTeam.strLeague}</h3>
                         <ul>
                             <li> <FontAwesomeIcon icon={faMapPin}/> Founded: {showTeam.intFormedYear} </li>
                             <li> <FontAwesomeIcon icon={faFlag}/> Founded: {showTeam.strCountry} </li>
@@ -70,16 +73,18 @@ const ShowTeam = () => {
                 </div>
                 <div className="description">
                     <p>{showTeam.strDescriptionEN}</p>
+                    <br/>
+                    <p>{showTeam.strStadiumDescription}</p>
                 </div>
                 <div className="social">
                     <ul>
-                        <li><a href={showTeam.strFacebook}><FontAwesomeIcon icon={faFacebookF} /></a></li>
-                        <li><a href={showTeam.strTwitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
-                        <li><a href={showTeam.strYoutube}><FontAwesomeIcon icon={faYoutube} /></a></li>
+                        <li><a target="_blank" rel="noreferrer" href={facebook}><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                        <li><a target="_blank" rel="noreferrer" href={twitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
+                        <li><a target="_blank" rel="noreferrer" href={youTube}><FontAwesomeIcon icon={faYoutube} /></a></li>
                     </ul>
                 </div>
                 <div className="back-home">
-                <Button className="main-btn"><Link to="/"> <FontAwesomeIcon icon={faArrowLeft} /> Back To Home  </Link></Button>
+                <Button><Link to="/"> <FontAwesomeIcon icon={faArrowLeft} /> Back To Home  </Link></Button>
                 </div>
             </Container>
             

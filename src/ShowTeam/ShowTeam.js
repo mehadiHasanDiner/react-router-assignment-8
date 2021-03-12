@@ -16,7 +16,6 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import './ShowTeam.css';
 
-
 const ShowTeam = () => {
     const {idTeam} = useParams();
     const [showTeam, setShowTeam] = useState({});

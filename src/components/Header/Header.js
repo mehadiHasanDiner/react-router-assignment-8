@@ -10,7 +10,7 @@ const Header = () => {
             <div className ="header-name">
             <div>Wikipedia</div>
             <div>Of</div>
-            <div>World Famous Football Clubs </div>
+            <div>World Best Football Clubs </div>
             </div>
         </div>
     );

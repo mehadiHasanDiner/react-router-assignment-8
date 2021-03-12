@@ -20,7 +20,7 @@ import './ShowTeam.css';
 const ShowTeam = () => {
     const {idTeam} = useParams();
     const [showTeam, setShowTeam] = useState({});
-    const [image, setImage] = useState(false);
+    // const [image, setImage] = useState(false);
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`;
         fetch(url)
@@ -73,7 +73,7 @@ const ShowTeam = () => {
                 </div>
                 <div className="social">
                     <ul>
-                        <li><a target="_blank" href={showTeam.strFacebook}><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                        <li><a href={showTeam.strFacebook}><FontAwesomeIcon icon={faFacebookF} /></a></li>
                         <li><a href={showTeam.strTwitter}><FontAwesomeIcon icon={faTwitter} /></a></li>
                         <li><a href={showTeam.strYoutube}><FontAwesomeIcon icon={faYoutube} /></a></li>
                     </ul>

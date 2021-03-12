@@ -1,10 +1,11 @@
 import React from 'react';
+import './NoMarch.css';
+
 
 const NoMatch = () => {
     return (
-        <div>
-            <h1>404</h1>
-            <p>Nothing Found</p>
+        <div className ="no-match">
+            <h1>Nothing Found</h1>
         </div>
     );
 };

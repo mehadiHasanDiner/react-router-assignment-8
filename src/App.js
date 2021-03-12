@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './components/Home/Home';
+import NoMatch from './components/NoMatch/NoMatch';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -21,6 +22,9 @@ function App() {
 						</Route>
 						<Route path="/showTeam/:idTeam">
 							<ShowTeam/>							
+						</Route>
+						<Route path ="*">
+							<NoMatch/>
 						</Route>
 					</Switch>
 

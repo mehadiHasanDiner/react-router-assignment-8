@@ -22,9 +22,6 @@ const Home = () => {
     return (
         <div>
         <Header></Header>
-{/* 
-        <h1> This is Home </h1>
-        <h3> Total Teams : {teams.length}</h3> */}
               {
                   teams && teams.map(team =><Teams team={team} key ={team.idTeam}></Teams>)
               }  

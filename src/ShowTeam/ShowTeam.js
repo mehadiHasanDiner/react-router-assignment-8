@@ -54,12 +54,12 @@ const ShowTeam = () => {
                 <div className="team-summary">
                     <Row>
                         <Col xs ={12} md ={6}>
-                        <h3>{showTeam.strLeague}</h3>
+                        <h3>{showTeam.strTeam}</h3>
                         <ul>
                             <li> <FontAwesomeIcon icon={faMapPin}/> Founded: {showTeam.intFormedYear} </li>
-                            <li> <FontAwesomeIcon icon={faFlag}/> Founded: {showTeam.strCountry} </li>
-                            <li> <FontAwesomeIcon icon={faFutbol}/> Founded: {showTeam.strSport} </li>
-                            <li> <FontAwesomeIcon icon={faMars}/> Founded: {showTeam.strGender} </li>
+                            <li> <FontAwesomeIcon icon={faFlag}/> Country: {showTeam.strCountry} </li>
+                            <li> <FontAwesomeIcon icon={faFutbol}/> Sports Type: {showTeam.strSport} </li>
+                            <li> <FontAwesomeIcon icon={faMars}/> Gender: {showTeam.strGender} </li>
                             
                         </ul>
                         </Col>

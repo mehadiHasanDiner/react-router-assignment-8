@@ -1,0 +1,17 @@
+.header-style{
+    background-image: url(../../images/stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+}
+
+  .header-name div {
+    opacity: 1;
+    color: white;
+    font-size: 36px;
+    text-shadow: 4px 4px 10px brown;
+  }

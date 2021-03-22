@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import Teams from '../Teams/Teams';
+import Loading from '../../images/loading.gif'
 
 const Home = () => {
     const [teams, setTeams] = useState([]);
@@ -22,6 +23,10 @@ const Home = () => {
     return (
         <div>
         <Header></Header>
+        { 
+            teams.length === 0 && <div style ={{display:'grid', alignItems:'center', justifyContent:'center'}}> <img style ={{width:'50px'}} src={Loading} alt=""/>
+            </div>
+        }
               {
                   teams && teams.map(team =><Teams team={team} key ={team.idTeam}></Teams>)
               }  

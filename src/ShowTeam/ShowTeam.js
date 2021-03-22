@@ -15,10 +15,13 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import './ShowTeam.css';
+import Loading from '../images/loading.gif'
+
 
 const ShowTeam = () => {
     const {idTeam} = useParams();
     const [showTeam, setShowTeam] = useState({});
+    const [loading, setLoading] = useState(true);
     // const [image, setImage] = useState(false);
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`;
@@ -26,6 +29,7 @@ const ShowTeam = () => {
         .then(res => res.json())
         .then(data => {
             setShowTeam(data.teams[0])
+            setLoading(false);
             console.log((data.teams[0]))
         })
     }, [idTeam])
@@ -48,7 +52,11 @@ const ShowTeam = () => {
     return (
         <div>
             <section className = "home-header">
-                <img width = "160px" src = {showTeam.strTeamBadge} alt =""/>
+                {
+                    loading ? <img style ={{width:'50px'}} src={Loading} alt=""/> :
+                    <img width = "160px" src = {showTeam.strTeamBadge} alt =""/>
+                }
+                
             </section>
             <Container>
                 <div className="team-summary">
